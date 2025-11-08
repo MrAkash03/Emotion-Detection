@@ -1,13 +1,29 @@
-This project aims to detect human emotions from text inputs using Natural Language Processing (NLP) techniques and a BERT-based transformer model. The model classifies emotions into 10 categories plus neutral, such as joy, anger, sadness, fear, love, surprise, disgust, optimism, pessimism, and neutral.
+# 💬 Emotion Detection using BERT (NLP-Based Approach)
 
-The project is trained on GoEmotions, a dataset developed by Google containing 58k human-annotated Reddit comments labeled with 27 emotion categories. To simplify the classification task, these were mapped to 10 broad emotions plus neutral. The model can analyze text inputs like “I love this movie!” or “I can’t go outside because of the rain” and predict the underlying emotion.
+Detects human emotions such as joy, anger, sadness, fear, and more from text using NLP and BERT.
 
-Key Features
+---
 
-     i) Emotion classification from user text input.
-     ii) Mapped 27 GoEmotions labels → 10 core emotions + neutral.
-     iii) Fine-tuned BERT-base (uncased) model using PyTorch.
-     iv)Tokenization and preprocessing with Hugging Face Transformers.
-     v) Real-time user interaction (terminal input/output).
-    vi) Emoji-based visualization of detected emotions.
-    vii) Supports saving and reloading model weights and tokenizer.
+## 🚀 Overview
+This project fine-tunes a **BERT (base, uncased)** model using the **GoEmotions dataset** by Google to classify text into **10 emotions + neutral**. It can interpret sentences and predict their emotional tone, suitable for chatbots, social media analytics, and AI-based communication systems.
+
+---
+
+## 🧠 Features
+- Detects 10 emotions + neutral from text.
+- Uses **GoEmotions** dataset with 43k+ training samples.
+- Fine-tuned **BERT-base** model with PyTorch and Transformers.
+- Real-time text emotion prediction (terminal-based).
+- Emoji representation for predicted emotions.
+- Saves model and tokenizer for reuse.
+
+---
+
+## 🧩 Emotion Classes
+
+## ⚙️ Tech Stack
+- **Language:** Python  
+- **Libraries:** PyTorch, Transformers, Pandas, Scikit-learn, NumPy  
+- **Model:** BERT (bert-base-uncased)  
+- **Dataset:** [GoEmotions](https://github.com/google-research/google-research/tree/master/goemotions)  
+- **Platform:** Google Colab  
